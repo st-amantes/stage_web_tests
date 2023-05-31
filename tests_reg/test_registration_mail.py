@@ -3,6 +3,7 @@ from selene import browser
 
 from base_page.page_register_mail import BasePageRegister
 
+
 @allure.title("Тест на регистрацию через кнопку 'Войти'")
 def test_registration_mail():
     basepage = BasePageRegister()
