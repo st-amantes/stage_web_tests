@@ -8,4 +8,4 @@ def driver_setting():
     browser.config.base_url = 'https://dev-web.pfm.team/'
     yield
 
-    browser.quit()
+    # browser.quit()
