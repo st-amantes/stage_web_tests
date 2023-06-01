@@ -12,7 +12,7 @@ class BasePageRegisterNumber:
     def button_number(self):
         browser.element('[data-qa="switch-button--enter"]').click()
     def send_number(self):
-        browser.element('[class="form-input"]').send_keys(''.join([str(random.randint(0, 10)) for _ in range(10)]))
+        browser.element('[class="form-input"]').send_keys(''.join([str(random.randint(0, 11)) for _ in range(11)]))
 
     def send_sms(self):
         browser.element('[data-qa="sign-in-button"]').click()
