@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "stage-web-tests"
+version = "0.1.0"
+description = ""
+authors = ["Vitalii <evit.viter@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stage_web_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.10.0"
+selene = "2.0.0rc2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

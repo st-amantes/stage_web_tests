@@ -5,7 +5,6 @@ from selene import browser
 def driver_setting():
     browser.driver.set_window_size(1920, 1800)
     browser.driver.set_window_position(-2, -2)
-    browser.config.base_url = 'https://dev-web.pfm.team/'
+    browser.config.base_url = 'https://stage-web.pfm.team/'
     yield
 
-    # browser.quit()

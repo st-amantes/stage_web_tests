@@ -10,3 +10,4 @@ def test_autorization_mail():
     basepage.button_come()
     basepage.send_mail()
     basepage.send_password()
+    basepage.enter_button()

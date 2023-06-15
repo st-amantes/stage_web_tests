@@ -1,9 +1,7 @@
 import pytest
 from selene import browser
-
-from base_page.page_register_mail import BasePageRegister
+from base_page.page_autorization import BasePageAuto
 from base_page.page_register_number import BasePageRegisterNumber
-
 
 
 @pytest.fixture()
@@ -20,13 +18,11 @@ def autorization_number():
 
 
 @pytest.fixture()
-def registration_mail():
-    bas = BasePageRegister()
+def autorization_maill():
+    basepage = BasePageAuto()
     browser.open('')
-    bas.button_in()
-    bas.button_reg()
-    bas.input_email()
-    bas.input_password()
-    bas.reset_password()
-    bas.send_sms()
-    bas.confirm_button()
+    basepage.button_in()
+    basepage.button_come()
+    basepage.send_mail()
+    basepage.send_password()
+    basepage.enter_button()

@@ -12,7 +12,7 @@ class BasePageAuto:
         browser.element('[placeholder="Логин/e-mail"]').send_keys('evitviter@gmail.com')
 
     def send_password(self):
-        browser.element('[data-qa="auth-password-input"]').send_keys('vitl121')
+        browser.element('[data-qa="auth-password-input"]').send_keys('12341234')
 
     def enter_button(self):
         browser.element('[data-qa="sign-in-button"]').click()
